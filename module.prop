@@ -1,0 +1,6 @@
+id=simple-android-zram
+name=Simple Android ZRAM
+version=v1.0
+versionCode=0
+author=Lan Tian
+description=A simple module to add 4GB ZRAM on Android.
