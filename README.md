@@ -1,6 +1,6 @@
 # Simple Android ZRAM
 
-A simple Magisk module that creates a 4GB ZRAM swap on Android devices.
+A simple Magisk module that creates a ZRAM swap on Android devices. Size of ZRAM is equal to total physical memory.
 
 This module specifically handles the situation where the device node `/dev/zram0` isn't automatically created, as seen on my Amazon Fire HD 8 (7th gen) with LineageOS 12.1.
 

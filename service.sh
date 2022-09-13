@@ -1,6 +1,6 @@
 #!/system/bin/sh
 echo 1 > /sys/block/zram0/reset
-echo 4096M > /sys/block/zram0/disksize
+echo $(awk '/MemTotal/{print $2}' /proc/meminfo)KB > /sys/block/zram0/disksize
 
 if [ ! -e /dev/zram0 ]; then
     mknod /dev/zram0 b $(cat /sys/block/zram0/dev | tr ":" " ")
